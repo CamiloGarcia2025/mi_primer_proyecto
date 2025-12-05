@@ -9,3 +9,11 @@ def calcular_factorial(n):
     for i in range(1, n + 1):
         resultado *= i
     return resultado
+
+# Prueba directa de la función
+if __name__ == "__main__":
+    try:
+        numero = int(input("Ingresa un número para calcular su factorial: "))
+        print("Resultado:", calcular_factorial(numero))
+    except ValueError:
+        print("Error: debes ingresar un número entero.")
